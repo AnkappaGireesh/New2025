@@ -15,14 +15,9 @@ total+=user_input
 remain=total/2
 remain-=computer_value
 attempts=0
-while attempts<=5:
  my_guess=int(input('Guess the remaining number!:'))
 if remain==my_guess:
    print('I found! The remaining value in you is:\n',my_guess)
    break
 else:
    print(f'Sorry try again! your guess{my_guess} is wrong')
-   attempts+1
-if attempts==0:
-  print('your all chance are over')
-  print('The remaining number is:',remain)
